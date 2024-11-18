@@ -69,5 +69,11 @@ LIMIT
 FROM
     SERVER pa_server INTO public;
 
+IMPORT FOREIGN SCHEMA public
+LIMIT
+    TO (event)
+FROM
+    SERVER pmg_server INTO public;
+
 -- Show all foreign tables
 \ detr
