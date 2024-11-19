@@ -75,5 +75,11 @@ LIMIT
 FROM
     SERVER pmg_server INTO public;
 
+IMPORT FOREIGN SCHEMA public
+LIMIT
+    TO (party)
+FROM
+    SERVER pmg_server INTO public;
+
 -- Show all foreign tables
 \ detr
